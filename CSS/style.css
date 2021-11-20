@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: auto;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cfcad6' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+header {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+}
+
+
+
+/* Preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.preloader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.init-images {
+    margin: 10px 30%;
+  }
+  
+  .init-images img {
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid green;
+  }
+
+
+.image-holder {
+  margin: 10px 30%;
+}
+
+.image-holder img {
+  width: 100%;
+  margin-top: 10px;
+  border: 2px solid green;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgb(121, 121, 121, 0.65);
+  position: fixed;
+  bottom: 20px;
+  left: 80%;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translate(1);
+  box-shadow: 0 0.1rem rgb(255, 255, 255, 0.65);
+}
+
+/* Media query for large smartphone*/
+
+@media screen and (max-width: 600px) {
+
+   .init-images {
+    margin: 15px;
+   } 
+   
+  .image-holder {
+    margin: 15px;
+  }
+
+  button {
+    height: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
