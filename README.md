@@ -1,1 +1,1 @@
-# Get Infinite images from Unplash
+# Get infinite images from Unplash
