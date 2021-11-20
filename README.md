@@ -1,1 +1,1 @@
-# Scroll-infinity
+# Get Infinite images from Unplash
